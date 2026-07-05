@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyBank Project Images</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f0f0f;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 40px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        section {
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 22px;
+            border-left: 4px solid #ffffff;
+            padding-left: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .grid img {
+            width: 100%;
+            height: 200px;
+            object-fit:contain;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: 0.3s;
+        }
+
+        .grid img:hover {
+            transform: scale(1.03);
+        }
+
+        .description {
+            background: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            opacity: 0.6;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>KeyBank Project Gallery</h1>
+    <p>Hardware • Software • System Overview</p>
+</header>
+
+<!--  HARDWARE SECTION -->
+<section>
+    <h2>Hardware Setup</h2>
+
+    <div class="grid">
+        <img src="images/hardware1.jpg" alt="Hardware Image 1">
+        <img src="images/hardware2.jpg" alt="Hardware Image 2">
+        <img src="images/hardware3.jpg" alt="Hardware Image 3">
+        <img src="images/hardware4.jpg" alt="Hardware Image 4">
+    </div>
+</section>
+
+<!--  WEBSITE SECTION -->
+<section>
+    <h2>Website Interface</h2>
+
+    <div class="grid">
+        <img src="images/web1.png" alt="Website Screenshot 1">
+        <img src="images/web2.png" alt="Website Screenshot 2">
+        <img src="images/web3.png" alt="Website Screenshot 3">
+    </div>
+</section>
+
+<!-- DESCRIPTION SECTION -->
+<section>
+    <h2>Project Description</h2>
+
+    <div class="description">
+        <p>
+            The KeyBank project is a secure access-control system designed to manage and monitor physical keys in workplace environments.
+            It integrates fingerprint authentication, RFID verification, and PIN-based security to ensure only authorized personnel
+            can access specific key containers.
+        </p>
+
+        <p>
+            Once authentication is successful, the system unlocks the corresponding key slot, logs the transaction, and sends
+            automated notifications to administrators via SMS and email. This ensures full accountability and real-time monitoring
+            of key usage.
+        </p>
+
+        <p>
+            The project combines embedded hardware with a web-based interface to create a scalable and efficient key management solution,
+            primarily designed for automotive dealerships and secure facilities.
+        </p>
+    </div>
+</section>
+
+<footer>
+    © 2026 KeyBank Project
+</footer>
+
+</body>
+</html>
